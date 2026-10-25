@@ -1,0 +1,21 @@
+{
+  "id": "google/owlv2-base-patch16-ensemble",
+  "revision": "cfd3195ba4ea9592eec887ded089f4c08eff231d",
+  "directory": "models/owlv2-base-patch16-ensemble",
+  "cache_directory": "semantics_owlv2",
+  "family": "owlv2",
+  "query_template": "a photo of a {}",
+  "source": "https://huggingface.co/google/owlv2-base-patch16-ensemble",
+  "license": "Apache-2.0",
+  "choice": "One bounded model alternative from the official OWLv2 model card; no final-query-specific aliases or threshold tuning.",
+  "files": {
+    "model.safetensors": "e1e130b9e404cf91a75ad45644c1da9d7fa5284085eecc864266a6923efb99e7",
+    "config.json": "ba9df8c25a4b8461887dd0a93d9252c9cd84697fe8d49a9d8794ce409af9acb2",
+    "preprocessor_config.json": "cf3e396635b797ee1a464e1b2836e98748f8edac19e89aaa2c93b55ac15b0064",
+    "tokenizer_config.json": "b55cda6198e152ded427c8a9b3faf1cccf27a7fa080697a62f6ff143f511f44f",
+    "vocab.json": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+    "merges.txt": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a"
+  },
+  "frozen": true,
+  "training_in_this_project": false
+}

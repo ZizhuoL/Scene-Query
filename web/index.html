@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SceneQuery — explore the evidence</title>
+  <link rel="stylesheet" href="/web/style.css">
+  <script type="importmap">{"imports":{"three":"/vendor/three/build/three.module.js","three/addons/":"/vendor/three/examples/jsm/"}}</script>
+</head>
+<body>
+<header><a class="brand" href="/" aria-label="SceneQuery home"><span class="brand-icon">⌘</span> SceneQuery</a><span class="project-title">REAL SCENE / 001 <b>The Freiburg desk</b></span><span class="local"><i></i> Local workspace</span></header>
+<main>
+  <aside>
+    <div class="eyebrow">EXPLORE THE EVIDENCE</div>
+    <h1>Find it.<br>See it in 3D.</h1>
+    <p class="intro">Search a real office scene with words. Follow the match back to the photographs.</p>
+    <form id="search-form"><label for="query">What are you looking for?</label><div class="input-wrap"><input id="query" maxlength="120" placeholder="An object or short description" autocomplete="off" required><button id="submit" type="submit" disabled aria-label="Search scene">↗</button></div></form>
+    <div class="suggestions"><button data-query="keyboard">Keyboard</button><button data-query="telephone">Telephone</button><button data-query="laptop">Laptop</button><button data-query="game controller">Controller</button></div>
+    <div id="result" aria-live="polite"><div class="status-label" id="status-label">PREPARING SCENE</div><h2 id="result-title">Opening your workspace</h2><p id="result-message">Loading fitted geometry and the local search index.</p></div>
+    <div id="candidates"></div>
+    <div class="sidebar-footer"><span class="eyebrow">A RECONSTRUCTION, WITH RECEIPTS</span><p>Public RGB-D photographs. Locally optimized geometry. Every match stays anchored as you move.</p><a href="#" id="about-link">About this scene <span>↗</span></a></div>
+  </aside>
+  <section class="workspace">
+    <div id="viewer" aria-label="Interactive 3D scene. Drag to orbit, scroll to zoom.">
+      <div class="viewer-top"><div><span class="pill">3D SCENE</span><span id="point-info">Loading geometry…</span></div><div class="view-tools"><button id="neural-toggle" hidden>Show learned surface</button><button id="training-evidence" hidden>Training evidence</button><button id="home" title="Return to the original view">Home view</button><button id="rotate" title="Orbit the scene by 30 degrees">Rotate view</button><button id="reset" title="Clear the query and highlight">Reset</button></div></div>
+      <div id="loading">Building your view<span>Reading the locally fitted scene</span></div>
+      <div class="viewer-bottom"><span class="axis">＋</span><span>Drag to orbit <b>·</b> Scroll to zoom <b>·</b> Right-drag to pan</span><span id="selection-info">No selection</span></div>
+      <div class="view-label"><span class="dot"></span><span id="view-label">Source viewpoint 42</span></div>
+    </div>
+    <section class="evidence"><div class="evidence-heading"><div><span class="eyebrow">SOURCE PHOTOGRAPHS</span><h2 id="evidence-title">The scene behind the reconstruction</h2></div><span id="evidence-count">Original RGB · 640 × 480</span></div><div id="photos"></div></section>
+  </section>
+</main>
+<dialog id="photo-dialog"><div class="dialog-bar"><span id="photo-title"></span><button id="close-photo" aria-label="Close photograph">Close ×</button></div><img id="full-photo" alt="Original source photograph"><p id="photo-caption"></p><button id="photo-view">Use this camera view</button></dialog>
+<dialog id="training-dialog">
+  <div class="dialog-bar"><div><span class="eyebrow">LOCAL MODEL TRAINING / M2 MAX</span><h2>A scene learned from observations</h2></div><button id="close-training">Close ×</button></div>
+  <p id="training-summary"></p>
+  <p id="research-acceptance" role="status"></p>
+  <div class="research-metrics" id="training-metrics"></div>
+  <p>The controlled study trains random spatial features and neural density/color decoders. The production path also tests learned Gaussian geometry and appearance. Every held-out prediction uses camera and trained parameters; target photographs and depth are used afterward for evaluation.</p>
+  <div class="research-controls"><label>Experiment <select id="experiment-select" aria-label="Experiment"></select></label><label>Held-out camera <select id="frame-select" aria-label="Held-out camera"></select></label></div>
+  <div class="neural-pair"><figure><img id="neural-original" alt="Held-out source photograph"><figcaption>Held-out original</figcaption></figure><figure><img id="neural-render" alt="Camera-only learned prediction"><figcaption>Learned prediction</figcaption></figure></div>
+  <details><summary>Inspect RGB and depth error maps</summary><img id="reconstruction-comparison" alt="Held-out original, learned rendering, RGB error and depth error"></details>
+  <p id="reconstruction-caption"></p>
+  <h3>Experiment results</h3><p>Quality columns are medians across nine held-out views. The three neural-field runs form the matched loss/seed comparison. Gaussian runs change representation, opacity supervision or input density; their scores are descriptive comparisons. Training time covers the full run, including later checkpoints.</p><div class="research-table-wrap"><table id="experiment-table"></table></div>
+  <h3>Controlled neural-field learning curves</h3><div id="training-chart"></div>
+  <p id="research-limitations"></p>
+</dialog>
+<dialog id="about-dialog"><div class="dialog-bar"><h2>One real scene. Traceable evidence.</h2><button id="close-about">Close ×</button></div><p>SceneQuery trains a randomly initialized neural radiance field on 48 public RGB-D views from TUM's Freiburg office sequence. Three separate views guide development; nine final views test reconstruction. Three controlled 6,000-step experiments run on the local M2 Max GPU.</p><p>The displayed surface is a point proxy sampled from learned geometry and appearance. A separate production Gaussian model trains on 525 observations with a temporal guard around every held-out image. The original fitted RGB-D surfels remain available as a comparison and supply stable search anchors in the same world coordinates. Open Training evidence for held-out predictions, errors and the depth-loss ablation.</p><p>OWLv2 is a frozen, pretrained image/text detector; its features are cached and associated with visible 3D points. Semantic caching and fusion are not training.</p><p>Similarity scores are not confidence probabilities. Missing depth, motion blur, occlusion and similar objects can produce incomplete or incorrect regions. This app does not discover hidden objects or perform general spatial reasoning.</p><p>Data: <a href="https://cvg.cit.tum.de/data/datasets/rgbd-dataset" target="_blank" rel="noreferrer">TUM RGB-D Benchmark</a>, CC BY 4.0. Sturm, Engelhard, Endres, Burgard & Cremers, IROS 2012. Frozen model: <a href="https://huggingface.co/google/owlv2-base-patch16-ensemble" target="_blank" rel="noreferrer">Google OWLv2</a>, Apache-2.0. Viewer: Three.js, MIT.</p></dialog>
+<script type="module" src="/web/app.js"></script>
+</body></html>

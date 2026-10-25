@@ -1,0 +1,25 @@
+{
+  "name": "recovery_resumed",
+  "device": "mps",
+  "seed": 42,
+  "steps": 40,
+  "width": 320,
+  "height": 240,
+  "rays": 128,
+  "samples": 32,
+  "resolutions": [
+    16,
+    32
+  ],
+  "channels": 4,
+  "hidden": 32,
+  "plane_lr": 0.02,
+  "decoder_lr": 0.003,
+  "depth_weight": 0.2,
+  "termination_weight": 0.02,
+  "tv_weight": 0.0001,
+  "log_every": 10,
+  "save_every": 20,
+  "retain_steps": [],
+  "pilot_render_frame": null
+}

@@ -1,0 +1,21 @@
+{
+  "files": {
+    "config/neural/protocol.json": "246f6a06e4313017b12a37b71c05cd1c81014361b44e56e13ae3ebbd15792e58",
+    "config/neural/rgbd_s42.json": "a48026e1935a1eeed2c29d90a5d3d92a9859e9b32dd1d92c784dd4046dbc4e58",
+    "config/neural/rgb_s42.json": "958376b31dab401058432e74835de3986db415e7ec60b87bb437eac0c97351d1",
+    "config/neural/rgbd_s43.json": "e16454b9961a4697e61d6c2cb382cf724bedcd53450db0c309a782d6116780cc",
+    "scenequery/radiance.py": "0228fb333e8726f5d7e1a2e02a6d473e9c90a650a7e3300e96df0e37f1cf0007",
+    "scripts/train_radiance.py": "464048fc860f97d4e539769384fd736d2ca4688ee59ae44f815fc63953cc793f",
+    "scripts/evaluate_radiance.py": "17f77e69fc8620f3d4f983eb938f0b36a3bd59c76f034e0241b5be776da639be"
+  },
+  "measured_source_files": {
+    "config/neural/protocol.json": "246f6a06e4313017b12a37b71c05cd1c81014361b44e56e13ae3ebbd15792e58",
+    "config/neural/rgbd_s42.json": "a48026e1935a1eeed2c29d90a5d3d92a9859e9b32dd1d92c784dd4046dbc4e58",
+    "config/neural/rgb_s42.json": "958376b31dab401058432e74835de3986db415e7ec60b87bb437eac0c97351d1",
+    "config/neural/rgbd_s43.json": "e16454b9961a4697e61d6c2cb382cf724bedcd53450db0c309a782d6116780cc",
+    "scenequery/radiance.py": "0228fb333e8726f5d7e1a2e02a6d473e9c90a650a7e3300e96df0e37f1cf0007",
+    "scripts/train_radiance.py": "79c5ce0985f6fb94ee45c09c3571125bf6c9ffe46bbcf0b5d0e6a4f7eed07cda",
+    "scripts/evaluate_radiance.py": "17f77e69fc8620f3d4f983eb938f0b36a3bd59c76f034e0241b5be776da639be"
+  },
+  "release_integrity_note": "The files map checks the distributed sources. Measured-source hashes identify the original runs; differences are limited to error-message wording, with no numerical method or experiment configuration change."
+}

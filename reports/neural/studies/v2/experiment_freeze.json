@@ -1,0 +1,23 @@
+{
+  "files": {
+    "config/neural/protocol.json": "246f6a06e4313017b12a37b71c05cd1c81014361b44e56e13ae3ebbd15792e58",
+    "config/neural/study_v2.json": "4fced68ec5cf444ff9dd043e2b4423f0ce4a4e0b6f04e3c3a798d33ab09942d9",
+    "config/neural/rgbd_v2_s42.json": "8aa64f1b952184f780f61891e5dda883b9b57ff913c6c2f0208679acb64ecf41",
+    "config/neural/rgb_v2_s42.json": "19bdba7cdd2656d0c3f0681defea0af87df61d7867f394345084a6b02eff76e1",
+    "config/neural/rgbd_v2_s43.json": "6c027ef3a9f113c54ce49869911ca7b6757fdacec00e473e07eb647701361872",
+    "scenequery/radiance.py": "0228fb333e8726f5d7e1a2e02a6d473e9c90a650a7e3300e96df0e37f1cf0007",
+    "scripts/train_radiance.py": "464048fc860f97d4e539769384fd736d2ca4688ee59ae44f815fc63953cc793f",
+    "scripts/evaluate_radiance.py": "17f77e69fc8620f3d4f983eb938f0b36a3bd59c76f034e0241b5be776da639be"
+  },
+  "measured_source_files": {
+    "config/neural/protocol.json": "246f6a06e4313017b12a37b71c05cd1c81014361b44e56e13ae3ebbd15792e58",
+    "config/neural/study_v2.json": "4fced68ec5cf444ff9dd043e2b4423f0ce4a4e0b6f04e3c3a798d33ab09942d9",
+    "config/neural/rgbd_v2_s42.json": "8aa64f1b952184f780f61891e5dda883b9b57ff913c6c2f0208679acb64ecf41",
+    "config/neural/rgb_v2_s42.json": "19bdba7cdd2656d0c3f0681defea0af87df61d7867f394345084a6b02eff76e1",
+    "config/neural/rgbd_v2_s43.json": "6c027ef3a9f113c54ce49869911ca7b6757fdacec00e473e07eb647701361872",
+    "scenequery/radiance.py": "0228fb333e8726f5d7e1a2e02a6d473e9c90a650a7e3300e96df0e37f1cf0007",
+    "scripts/train_radiance.py": "79c5ce0985f6fb94ee45c09c3571125bf6c9ffe46bbcf0b5d0e6a4f7eed07cda",
+    "scripts/evaluate_radiance.py": "17f77e69fc8620f3d4f983eb938f0b36a3bd59c76f034e0241b5be776da639be"
+  },
+  "release_integrity_note": "The files map checks the distributed sources. Measured-source hashes identify the original runs; differences are limited to error-message wording, with no numerical method or experiment configuration change."
+}

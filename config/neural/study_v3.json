@@ -1,0 +1,23 @@
+{
+  "id": "v3",
+  "revision": 2,
+  "runs": {
+    "rgbd_log_s42": "RGB + depth / seed 42",
+    "rgb_log_s42": "RGB loss only / seed 42",
+    "rgbd_log_s43": "RGB + depth / seed 43"
+  },
+  "full_runs": [
+    "rgbd_log_s42",
+    "rgbd_log_s43"
+  ],
+  "paired_full": "rgbd_log_s42",
+  "control": "rgb_log_s42",
+  "second_seed": "rgbd_log_s43",
+  "prior_study": "reports/neural/studies/v1/analysis.json",
+  "protocol": "config/neural/protocol.json",
+  "disclosure": "Second and final bounded development revision. Repeated engineering acceptance after v1 failed fixed PSNR gates and v2 failed its development resource guard. No threshold or camera changes.",
+  "recovery_report": "recovery_v3.json",
+  "evaluator": "evaluate_radiance_log.py",
+  "trainer": "train_radiance_log.py",
+  "pilot_refinement": "One bounded log-density parameterization check during revision-2 pilot; no further architecture search."
+}

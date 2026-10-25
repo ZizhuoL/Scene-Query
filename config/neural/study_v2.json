@@ -1,0 +1,19 @@
+{
+  "id": "v2",
+  "revision": 1,
+  "runs": {
+    "rgbd_v2_s42": "RGB + depth / seed 42",
+    "rgb_v2_s42": "RGB loss only / seed 42",
+    "rgbd_v2_s43": "RGB + depth / seed 43"
+  },
+  "full_runs": [
+    "rgbd_v2_s42",
+    "rgbd_v2_s43"
+  ],
+  "paired_full": "rgbd_v2_s42",
+  "control": "rgb_v2_s42",
+  "second_seed": "rgbd_v2_s43",
+  "prior_study": "reports/neural/studies/v1/analysis.json",
+  "protocol": "config/neural/protocol.json",
+  "disclosure": "Repeated engineering acceptance after v1 failed fixed PSNR thresholds. No threshold/view changes. Use training/development views for the capacity revision; final results are no longer an untouched scientific test."
+}

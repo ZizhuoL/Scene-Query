@@ -1,0 +1,12 @@
+{
+  "files": {
+    "config/neural/brush_dense.json": "5cfd30662506174a5443608545b4478864e82aad963383b30befc107a77677c5",
+    "scripts/run_brush_dense.py": "90d216dbbd8fe9980ff8b8c3e417571ed8acb4281214716f461d30fcd3944997",
+    "scripts/prepare_brush_dense.py": "7cef4acbc0b47a0690e0393df6d60933e4953b2521581137a1006e5af350b0d7",
+    "scripts/evaluate_brush_dense.py": "ab704551eb6ef8b862da39fbc3a16f0a8bc6a454e0354ffa428788264e547cb2",
+    "scenequery/gaussian.py": "078cd0516b2e62cfd0c72875f2b5387d8ac13c67f0ef01c215a68d933d81521a",
+    "scenequery/gaussian_blend.cpp": "7931e5cc6a6c20467bbfc50633c8aa894960d660803602b0883b0209bb65e50b",
+    "config/neural/protocol.json": "246f6a06e4313017b12a37b71c05cd1c81014361b44e56e13ae3ebbd15792e58",
+    "reports/brush/preparation_dense.json": "c5ef24b93c96b1d2d3b97d0ef7abad35635af7f24123c5c385d23999c727560e"
+  }
+}

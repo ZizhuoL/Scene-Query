@@ -1,0 +1,27 @@
+{
+  "files": {
+    "config/neural/protocol.json": "246f6a06e4313017b12a37b71c05cd1c81014361b44e56e13ae3ebbd15792e58",
+    "config/neural/study_v3.json": "f81470aaea84d6f8cbd963cc978a3ddcfe76237cb0cd843d54d0b21096800c60",
+    "config/neural/rgbd_log_s42.json": "b586d2b5e847e38c25f8f5c81e2aea86487b5c980c94210f4158c2f32374de6f",
+    "config/neural/rgb_log_s42.json": "b8e7d8494f112bb10279d084ef0a18653b6325458bf6caeca6ea0661e56195ae",
+    "config/neural/rgbd_log_s43.json": "3c19fb27efbca650664f3cfb1445e9dcc8d49ef4b1f421d71af7d75dcc6752cc",
+    "scenequery/radiance.py": "0228fb333e8726f5d7e1a2e02a6d473e9c90a650a7e3300e96df0e37f1cf0007",
+    "scenequery/radiance_log.py": "32bf110f386f118f7d282e4515e66f1be85285f7754c48cd2a436782445d447c",
+    "scripts/train_radiance.py": "464048fc860f97d4e539769384fd736d2ca4688ee59ae44f815fc63953cc793f",
+    "scripts/train_radiance_log.py": "4eadc14833632bc4796a33396dede0bcf6e86e9ef67f82d9959be7f17db5fea8",
+    "scripts/evaluate_radiance_log.py": "efe44ee1f75eeaab1b6a1752da036fb2ca2af0b205a40bcdfc788eab550c97a5"
+  },
+  "measured_source_files": {
+    "config/neural/protocol.json": "246f6a06e4313017b12a37b71c05cd1c81014361b44e56e13ae3ebbd15792e58",
+    "config/neural/study_v3.json": "f81470aaea84d6f8cbd963cc978a3ddcfe76237cb0cd843d54d0b21096800c60",
+    "config/neural/rgbd_log_s42.json": "b586d2b5e847e38c25f8f5c81e2aea86487b5c980c94210f4158c2f32374de6f",
+    "config/neural/rgb_log_s42.json": "b8e7d8494f112bb10279d084ef0a18653b6325458bf6caeca6ea0661e56195ae",
+    "config/neural/rgbd_log_s43.json": "3c19fb27efbca650664f3cfb1445e9dcc8d49ef4b1f421d71af7d75dcc6752cc",
+    "scenequery/radiance.py": "0228fb333e8726f5d7e1a2e02a6d473e9c90a650a7e3300e96df0e37f1cf0007",
+    "scenequery/radiance_log.py": "32bf110f386f118f7d282e4515e66f1be85285f7754c48cd2a436782445d447c",
+    "scripts/train_radiance.py": "79c5ce0985f6fb94ee45c09c3571125bf6c9ffe46bbcf0b5d0e6a4f7eed07cda",
+    "scripts/train_radiance_log.py": "621dccb995142e74a3127e3fa93d8c5c2b39ea177f246899185d4d9f541efb60",
+    "scripts/evaluate_radiance_log.py": "efe44ee1f75eeaab1b6a1752da036fb2ca2af0b205a40bcdfc788eab550c97a5"
+  },
+  "release_integrity_note": "The files map checks the distributed sources. Measured-source hashes identify the original runs; differences are limited to error-message wording, with no numerical method or experiment configuration change."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "google/owlvit-base-patch32",
+  "revision": "cbc355fb364588351c5d51c7f74465e8e7ec6f72",
+  "license": "Apache-2.0",
+  "source": "https://huggingface.co/google/owlvit-base-patch32",
+  "files": {
+    "model.safetensors": "4dbe0399f0b7d7c8dddf1535a98769cc30743bebc877aea681998c8d984ce52b",
+    "config.json": "b5934e0d2933194b8a85f93674e577feaa1a1ba2dc1d143b2d5e5305ff7a9d7c",
+    "preprocessor_config.json": "2010d320cd2c68a8bb1de69aaa8f89daf173ef17cc22a30e4baf44b2f0e9bb6e",
+    "tokenizer_config.json": "da35aceebeda2adf44094a5867940b09379323b9390fa9197b57044e106bfb6e",
+    "vocab.json": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+    "merges.txt": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a"
+  },
+  "frozen": true,
+  "training_in_this_project": false
+}

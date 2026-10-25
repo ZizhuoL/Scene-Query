@@ -1,0 +1,276 @@
+{
+  "config": {
+    "method": "RGB-D photometric/depth surfel optimization",
+    "steps": 240,
+    "seed": 42,
+    "voxel_m": 0.008,
+    "max_points": 120000,
+    "xyz_lr": 0.0003,
+    "rgb_lr": 0.01,
+    "device": "cpu",
+    "batch_views": 4,
+    "depth_gate_m": 0.06,
+    "max_offset_m": 0.025,
+    "frames_manifest_sha256": "d67e564317c4ad3cd689a326ba5f77f521339ede724dd8a22bd36b20defc9b85",
+    "train_frame_ids": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      13,
+      14,
+      15,
+      16,
+      18,
+      19,
+      20,
+      21,
+      23,
+      24,
+      25,
+      26,
+      28,
+      29,
+      30,
+      31,
+      33,
+      34,
+      35,
+      36,
+      38,
+      39,
+      40,
+      41,
+      43,
+      44,
+      45,
+      46,
+      48,
+      49,
+      50,
+      51,
+      53,
+      54,
+      55,
+      56,
+      58,
+      59
+    ]
+  },
+  "points": 120000,
+  "seconds": 14.156917582731694,
+  "peak_rss_gb": 1.132822528,
+  "xyz_mean_change_m": 0.009314130991697311,
+  "rgb_mean_change": 0.07063169777393341,
+  "history": [
+    {
+      "step": 1,
+      "loss": 0.034235041588544846,
+      "depth_l1_m": 0.021878499537706375,
+      "rgb_l1": 0.12356540560722351,
+      "visible_samples": 118777,
+      "elapsed_seconds": 2.6262528747320175
+    },
+    {
+      "step": 11,
+      "loss": 0.030181240290403366,
+      "depth_l1_m": 0.020257825031876564,
+      "rgb_l1": 0.09911202639341354,
+      "visible_samples": 90143,
+      "elapsed_seconds": 3.1899694157764316
+    },
+    {
+      "step": 21,
+      "loss": 0.03163275495171547,
+      "depth_l1_m": 0.02155427820980549,
+      "rgb_l1": 0.10048019886016846,
+      "visible_samples": 142435,
+      "elapsed_seconds": 3.6516014160588384
+    },
+    {
+      "step": 31,
+      "loss": 0.028815440833568573,
+      "depth_l1_m": 0.019643446430563927,
+      "rgb_l1": 0.091207355260849,
+      "visible_samples": 92981,
+      "elapsed_seconds": 4.117976957932115
+    },
+    {
+      "step": 41,
+      "loss": 0.0293715987354517,
+      "depth_l1_m": 0.020601235330104828,
+      "rgb_l1": 0.08695590496063232,
+      "visible_samples": 129770,
+      "elapsed_seconds": 4.654876874759793
+    },
+    {
+      "step": 51,
+      "loss": 0.03048969805240631,
+      "depth_l1_m": 0.020701680332422256,
+      "rgb_l1": 0.09690665453672409,
+      "visible_samples": 99922,
+      "elapsed_seconds": 5.04075533291325
+    },
+    {
+      "step": 61,
+      "loss": 0.027229569852352142,
+      "depth_l1_m": 0.019818834960460663,
+      "rgb_l1": 0.07288844883441925,
+      "visible_samples": 150044,
+      "elapsed_seconds": 5.451805375050753
+    },
+    {
+      "step": 71,
+      "loss": 0.025285938754677773,
+      "depth_l1_m": 0.018061554059386253,
+      "rgb_l1": 0.07077115774154663,
+      "visible_samples": 97131,
+      "elapsed_seconds": 5.890511333011091
+    },
+    {
+      "step": 81,
+      "loss": 0.025254013016819954,
+      "depth_l1_m": 0.01858469285070896,
+      "rgb_l1": 0.06497134268283844,
+      "visible_samples": 67551,
+      "elapsed_seconds": 6.447826208081096
+    },
+    {
+      "step": 91,
+      "loss": 0.028525331988930702,
+      "depth_l1_m": 0.020308762788772583,
+      "rgb_l1": 0.08021662384271622,
+      "visible_samples": 96099,
+      "elapsed_seconds": 6.8631927077658474
+    },
+    {
+      "step": 101,
+      "loss": 0.025285406038165092,
+      "depth_l1_m": 0.017546746879816055,
+      "rgb_l1": 0.07522232085466385,
+      "visible_samples": 103844,
+      "elapsed_seconds": 7.303980082739145
+    },
+    {
+      "step": 111,
+      "loss": 0.028875097632408142,
+      "depth_l1_m": 0.020080825313925743,
+      "rgb_l1": 0.0855523943901062,
+      "visible_samples": 91658,
+      "elapsed_seconds": 7.708844415843487
+    },
+    {
+      "step": 121,
+      "loss": 0.02613750286400318,
+      "depth_l1_m": 0.018206104636192322,
+      "rgb_l1": 0.07670747488737106,
+      "visible_samples": 132712,
+      "elapsed_seconds": 8.127862374763936
+    },
+    {
+      "step": 131,
+      "loss": 0.026901613920927048,
+      "depth_l1_m": 0.01988958939909935,
+      "rgb_l1": 0.06728711724281311,
+      "visible_samples": 108408,
+      "elapsed_seconds": 8.514080124907196
+    },
+    {
+      "step": 141,
+      "loss": 0.023790188133716583,
+      "depth_l1_m": 0.016982192173600197,
+      "rgb_l1": 0.06503143161535263,
+      "visible_samples": 89182,
+      "elapsed_seconds": 9.065200916025788
+    },
+    {
+      "step": 151,
+      "loss": 0.024716045707464218,
+      "depth_l1_m": 0.01606772281229496,
+      "rgb_l1": 0.083240807056427,
+      "visible_samples": 127958,
+      "elapsed_seconds": 9.590320207644254
+    },
+    {
+      "step": 161,
+      "loss": 0.024393858388066292,
+      "depth_l1_m": 0.01794803887605667,
+      "rgb_l1": 0.06102875620126724,
+      "visible_samples": 129216,
+      "elapsed_seconds": 10.001669915858656
+    },
+    {
+      "step": 171,
+      "loss": 0.026946432888507843,
+      "depth_l1_m": 0.018973851576447487,
+      "rgb_l1": 0.07613437622785568,
+      "visible_samples": 107408,
+      "elapsed_seconds": 10.517664415761828
+    },
+    {
+      "step": 181,
+      "loss": 0.024384113028645515,
+      "depth_l1_m": 0.01787138730287552,
+      "rgb_l1": 0.06138990446925163,
+      "visible_samples": 132976,
+      "elapsed_seconds": 10.973800374660641
+    },
+    {
+      "step": 191,
+      "loss": 0.026426054537296295,
+      "depth_l1_m": 0.01865987293422222,
+      "rgb_l1": 0.0737922266125679,
+      "visible_samples": 117167,
+      "elapsed_seconds": 11.427448499947786
+    },
+    {
+      "step": 201,
+      "loss": 0.02196529693901539,
+      "depth_l1_m": 0.01496546994894743,
+      "rgb_l1": 0.06601091474294662,
+      "visible_samples": 114180,
+      "elapsed_seconds": 11.876171458046883
+    },
+    {
+      "step": 211,
+      "loss": 0.021257717162370682,
+      "depth_l1_m": 0.015287673100829124,
+      "rgb_l1": 0.05559258908033371,
+      "visible_samples": 93269,
+      "elapsed_seconds": 12.309430750086904
+    },
+    {
+      "step": 221,
+      "loss": 0.026625609025359154,
+      "depth_l1_m": 0.017508231103420258,
+      "rgb_l1": 0.08696314692497253,
+      "visible_samples": 74939,
+      "elapsed_seconds": 12.886616582982242
+    },
+    {
+      "step": 231,
+      "loss": 0.028317203745245934,
+      "depth_l1_m": 0.019545819610357285,
+      "rgb_l1": 0.08339840918779373,
+      "visible_samples": 112691,
+      "elapsed_seconds": 13.402642415836453
+    },
+    {
+      "step": 240,
+      "loss": 0.027606723830103874,
+      "depth_l1_m": 0.019549353048205376,
+      "rgb_l1": 0.0761626586318016,
+      "visible_samples": 126985,
+      "elapsed_seconds": 14.04340137494728
+    }
+  ],
+  "fitted_sha256": "de4bd8a9a85670dcda444d44038d472031ec8c2e0b5702bbbb8a0ddb26574c56",
+  "initialization": "deterministic first RGB-D observation per 8 mm voxel, capped by seed-42 sample",
+  "training": "Adam gradients into XYZ via depth and RGB projection/sampling, and into RGB via photometric loss; cameras fixed; no semantic gradients"
+}

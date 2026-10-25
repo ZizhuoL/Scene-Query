@@ -1,0 +1,16 @@
+{
+  "name": "opaque_s42",
+  "timeout_seconds": 1800,
+  "arguments": {
+    "total_steps": 6000,
+    "seed": 42,
+    "max_resolution": 320,
+    "max_splats": 250000,
+    "sh_degree": 2,
+    "eval_every": 500,
+    "eval_save_to_disk": true,
+    "export_every": 500,
+    "growth_stop_iter": 4500,
+    "match_alpha_weight": 0.1
+  }
+}

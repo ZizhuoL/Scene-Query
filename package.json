@@ -1,0 +1,8 @@
+{
+  "name": "scenequery",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local text-grounded 3D scene explorer",
+  "type": "module",
+  "dependencies": {"three": "0.174.0"}
+}

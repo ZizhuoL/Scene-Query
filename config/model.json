@@ -1,0 +1,11 @@
+{
+  "id": "google/owlv2-base-patch16-ensemble",
+  "revision": "cfd3195ba4ea9592eec887ded089f4c08eff231d",
+  "directory": "models/owlv2-base-patch16-ensemble",
+  "cache_directory": "semantics_owlv2",
+  "family": "owlv2",
+  "query_template": "a photo of a {}",
+  "source": "https://huggingface.co/google/owlv2-base-patch16-ensemble",
+  "license": "Apache-2.0",
+  "choice": "One bounded model alternative from the official OWLv2 model card; no final-query-specific aliases or threshold tuning."
+}

@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "declared_before_semantic_results": true,
+  "development_queries": ["monitor", "book"],
+  "final_positive_queries": [
+    {"query": "keyboard", "object": "keyboard"},
+    {"query": "computer keyboard", "object": "keyboard"},
+    {"query": "laptop", "object": "laptop"},
+    {"query": "notebook computer", "object": "laptop"},
+    {"query": "telephone", "object": "telephone"},
+    {"query": "desk phone", "object": "telephone"},
+    {"query": "game controller", "object": "controller"},
+    {"query": "gamepad", "object": "controller"}
+  ],
+  "final_absent_queries": ["elephant", "bicycle", "wine glass", "microwave oven"],
+  "final_ambiguous_queries": ["computer", "object"],
+  "rubric": {
+    "positive_queries_pass_minimum": 6,
+    "distinct_object_categories_pass_minimum": 3,
+    "views_per_positive_query_minimum": 2,
+    "projected_selection_bbox_iou_minimum": 0.25,
+    "projected_selection_centroid_inside_annotation": true,
+    "selected_points_minimum": 30,
+    "source_evidence_views_minimum": 2,
+    "absent_queries_rejected_minimum": 3,
+    "ambiguous_queries_flagged_minimum": 2,
+    "same_selection_after_view_rotation": true,
+    "notes": "A positive query passes when a returned candidate has at least 30 fixed world points and projects into the approximate target reference boxes in at least two held-out views (centroid inside and bbox IoU >= 0.25), with at least two training-source evidence views. Multiple physically separate instances must be exposed as candidates. Source evidence must be visually verified. Evaluation uses project-specific reference boxes independent of the semantic detector; it is a small acceptance sample, not an independent human benchmark. Thresholds are frozen before final query execution; no tuning against final outcomes."
+  },
+  "geometry_rubric": {
+    "training_steps_minimum": 100,
+    "finite_parameters": true,
+    "nonzero_xyz_and_rgb_parameter_change": true,
+    "heldout_median_depth_error_max_m": 0.08,
+    "heldout_inspection": "Inspect at least three held-out view comparisons and disclose holes, duplicates and color artifacts."
+  },
+  "runtime_rubric": {
+    "query_warm_p95_seconds_max": 5,
+    "pipeline_peak_rss_gb_max": 16,
+    "loopback_only": true
+  }
+}

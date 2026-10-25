@@ -1,0 +1,18 @@
+{
+  "annotator": "Project-specific approximate reference boxes from held-out RGB photographs; not independent human ground truth",
+  "independent_of_semantic_model": true,
+  "external_human_ground_truth": false,
+  "created_before_final_query_execution": true,
+  "coordinate_system": "original 640x480 pixels; [left, top, right, bottom]",
+  "policy": "Bounding boxes surround visible target extent; they are approximate reference regions, never used by fit, semantic cache or query runtime. Partial occlusion and blur limit precision.",
+  "annotations": [
+    {"object": "telephone", "frame_id": 7, "bbox": [170, 158, 301, 287]},
+    {"object": "telephone", "frame_id": 12, "bbox": [174, 143, 348, 310]},
+    {"object": "laptop", "frame_id": 22, "bbox": [0, 143, 232, 387]},
+    {"object": "laptop", "frame_id": 32, "bbox": [0, 0, 145, 202]},
+    {"object": "keyboard", "frame_id": 42, "bbox": [424, 143, 567, 227]},
+    {"object": "keyboard", "frame_id": 47, "bbox": [304, 269, 506, 399]},
+    {"object": "controller", "frame_id": 52, "bbox": [78, 200, 254, 355]},
+    {"object": "controller", "frame_id": 57, "bbox": [243, 337, 410, 460]}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "files": {
+    "config/neural/brush_opaque.json": "ef8e69dc9da15d3996ab46c918d3e33fc5b79a89cf541de9233198bfd71be73c",
+    "scripts/run_brush_opaque.py": "9bd52c39b958c8c19b26461c7a761180ebe544541d01276438a830106cbd9a7d",
+    "scripts/evaluate_brush_opaque.py": "a2a5db6198d7875b495136507a89b719f4aa44d92e15ab368e7ce4defa69d5d6",
+    "scenequery/gaussian.py": "078cd0516b2e62cfd0c72875f2b5387d8ac13c67f0ef01c215a68d933d81521a",
+    "scenequery/gaussian_blend.cpp": "7931e5cc6a6c20467bbfc50633c8aa894960d660803602b0883b0209bb65e50b",
+    "config/neural/protocol.json": "246f6a06e4313017b12a37b71c05cd1c81014361b44e56e13ae3ebbd15792e58",
+    "reports/brush/preparation_opaque.json": "b9b2dfd471704c4128bc71f0ba52b16ad34c8f4359b543bd358fd9384d0b2c1a"
+  }
+}

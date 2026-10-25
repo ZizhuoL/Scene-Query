@@ -1,0 +1,11 @@
+{
+  "detection_score_min": 0.12,
+  "depth_tolerance_m": 0.05,
+  "min_support_views": 3,
+  "min_visible_support_fraction": 0.35,
+  "min_points": 30,
+  "component_radius_m": 0.025,
+  "grabcut": true,
+  "underspecified_queries": ["object", "thing", "item", "something", "stuff"],
+  "provenance": "Initial settings for development queries only. Freeze before final evaluation. Scores are not calibrated confidence."
+}

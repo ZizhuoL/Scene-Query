@@ -1,0 +1,33 @@
+{
+  "name": "rgbd_log_s42",
+  "device": "mps",
+  "seed": 42,
+  "steps": 10000,
+  "width": 320,
+  "height": 240,
+  "rays": 1024,
+  "samples": 128,
+  "resolutions": [
+    64,
+    128,
+    256
+  ],
+  "channels": 12,
+  "hidden": 64,
+  "plane_lr": 0.02,
+  "decoder_lr": 0.003,
+  "depth_weight": 0.2,
+  "termination_weight": 0.02,
+  "tv_weight": 0.0001,
+  "log_every": 200,
+  "save_every": 500,
+  "retain_steps": [
+    500,
+    1000,
+    2000,
+    10000
+  ],
+  "pilot_render_frame": null,
+  "termination_sigma_m": 0.01,
+  "density_activation": "exp"
+}

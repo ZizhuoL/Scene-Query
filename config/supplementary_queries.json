@@ -1,0 +1,10 @@
+{
+  "purpose": "Additional phrasing checks declared before the OWLv2 acceptance run; supplementary only, never replace original failures or requirements.",
+  "queries": [
+    {"query":"a white keyboard", "object":"keyboard"},
+    {"query":"a portable computer", "object":"laptop"},
+    {"query":"a landline phone", "object":"telephone"},
+    {"query":"a video game controller", "object":"controller"}
+  ],
+  "notes": "No threshold or alias tuning follows these results. Use the same held-out reference boxes and report every outcome."
+}

@@ -1,0 +1,11 @@
+{
+  "id": "TUM-RGBD-freiburg1-desk-2011-09-30",
+  "url": "https://webshare.cvg.cit.tum.de/g/rgbd/dataset/freiburg1/rgbd_dataset_freiburg1_desk.tgz",
+  "bytes": 344011403,
+  "sha256": "e983d6830916e66dc4a46a71368046b149b283de87769690e7aa4e0b9483530c",
+  "license": "CC-BY-4.0",
+  "license_source": "https://cvg.cit.tum.de/data/datasets/rgbd-dataset#license",
+  "specification": "https://cvg.cit.tum.de/data/datasets/rgbd-dataset/file_formats",
+  "citation": "Sturm, Engelhard, Endres, Burgard, Cremers. A Benchmark for the Evaluation of RGB-D SLAM Systems. IROS 2012.",
+  "redistribution": "Raw data and derived media excluded from Git; preserve attribution in local app and derived results."
+}
